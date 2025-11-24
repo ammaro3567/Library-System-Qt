@@ -1,0 +1,23 @@
+# Qt build folders
+build*/
+*/build*/
+Debug/
+Release/
+
+# Qt user-specific files
+*.pro.user
+*.pro.user.*
+
+# Compiled binaries
+*.o
+*.obj
+*.exe
+*.dll
+
+# Generated files
+*.qm
+*.qrc.dep
+
+# OS files
+.DS_Store
+Thumbs.db
