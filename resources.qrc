@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/new/login">
+        <file>.qtcreator/libraryimage.jpg</file>
+        <file>.qtcreator/open-book.png</file>
+        <file>.qtcreator/add.svg</file>
+        <file>.qtcreator/edit.svg</file>
+        <file>.qtcreator/list.svg</file>
+        <file>.qtcreator/log-out.svg</file>
+        <file>.qtcreator/search.svg</file>
+        <file>.qtcreator/trash.svg</file>
+        <file>.qtcreator/borrow.svg</file>
+    </qresource>
+</RCC>

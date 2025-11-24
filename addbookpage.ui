@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddBookPage</class>
+ <widget class="QDialog" name="AddBookPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>436</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Add Book</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/new/login/.qtcreator/add.svg</normaloff>:/new/login/.qtcreator/add.svg</iconset>
+  </property>
+  <widget class="QLabel" name="Title">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Script</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+font-size: 17px;
+    font-weight: bold;
+    color: #3498DB;
+    letter-spacing: 1px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Title:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="TitleInput">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>50</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 2px solid #357ABD;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+QLineEdit:focus {
+    border: 2px solid #1E90FF;
+    background: #f2f9ff;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="AuthorInput">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>120</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 2px solid #357ABD;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+QLineEdit:focus {
+    border: 2px solid #1E90FF;
+    background: #f2f9ff;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ISBNInput">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>260</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 2px solid #357ABD;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+QLineEdit:focus {
+    border: 2px solid #1E90FF;
+    background: #f2f9ff;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Author">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>120</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Script</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+font-size: 17px;
+    font-weight: bold;
+    color: #3498DB;
+    letter-spacing: 1px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Author:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Genre">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>180</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Script</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+font-size: 17px;
+    font-weight: bold;
+    color: #3498DB;
+    letter-spacing: 1px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Genre:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ISBN">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>260</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Script</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+font-size: 17px;
+    font-weight: bold;
+    color: #3498DB;
+    letter-spacing: 1px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>ISBN:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ISBN_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>330</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Script</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+font-size: 17px;
+    font-weight: bold;
+    color: #3498DB;
+    letter-spacing: 1px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Availability:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Generbox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>190</y>
+     <width>171</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    border: 2px solid #357ABD;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+QComboBox:hover {
+    border: 2px solid #1E90FF;
+}
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Fiction</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Non-Fiction</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Novel</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Science</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fantasy</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dystopian</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Classic</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Self Help</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Finance</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Other</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="Avalibiltybox">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>340</y>
+     <width>121</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    border: 2px solid #357ABD;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+QComboBox:hover {
+    border: 2px solid #1E90FF;
+}
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Available</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Borrowed</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="AddBook">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>420</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #1E90FF;
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: white;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #0F7AE5;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Add Book</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancel">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>420</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #cccccc;
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: black;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>cancel</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SearchBook</class>
+ <widget class="QDialog" name="SearchBook">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>783</width>
+    <height>587</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Search Book</string>
+  </property>
+  <widget class="QPushButton" name="Searchbutton">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>200</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #1E90FF;
+    border-radius: 8px;
+    padding: 6px 15px;
+    color: white;
+    font-weight: bold;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="SearchbyBox">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>80</y>
+     <width>171</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    border: 2px solid #357ABD;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+QComboBox:hover {
+    border: 2px solid #1E90FF;
+}
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Title</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Author</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISBN</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="Title">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>70</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Script</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+font-size: 17px;
+    font-weight: bold;
+    color: #3498DB;
+    letter-spacing: 1px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Search by:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ValueInput">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>130</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 2px solid #357ABD;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+QLineEdit:focus {
+    border: 2px solid #1E90FF;
+    background: #f2f9ff;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Title_2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>130</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Script</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+font-size: 17px;
+    font-weight: bold;
+    color: #3498DB;
+    letter-spacing: 1px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Value:</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="ResultTable">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>290</y>
+     <width>511</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+    border: 1px solid #b0bec5;
+    gridline-color: #e0e0e0;
+    background-color: white;
+}
+
+QHeaderView::section {
+    background-color: #1976D2;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+</string>
+   </property>
+   <property name="dragDropOverwriteMode">
+    <bool>true</bool>
+   </property>
+   <property name="columnCount">
+    <number>5</number>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Title</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Author</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Genre</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ISBN</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Availability</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

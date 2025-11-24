@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DeleteBook</class>
+ <widget class="QDialog" name="DeleteBook">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>461</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Delete Book</string>
+  </property>
+  <widget class="QLabel" name="Title_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>190</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Script</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+font-size: 17px;
+    font-weight: bold;
+    color: #3498DB;
+    letter-spacing: 1px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Value:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="DeleteButton">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>270</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #1E90FF;
+    border-radius: 8px;
+    padding: 6px 15px;
+    color: white;
+    font-weight: bold;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Value">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>190</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 2px solid #357ABD;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+QLineEdit:focus {
+    border: 2px solid #1E90FF;
+    background: #f2f9ff;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="DeleteBox">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>130</y>
+     <width>171</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    border: 2px solid #357ABD;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+QComboBox:hover {
+    border: 2px solid #1E90FF;
+}
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Title</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISBN</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="DeletLabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>120</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Script</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+font-size: 17px;
+    font-weight: bold;
+    color: #3498DB;
+    letter-spacing: 1px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Delete by:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancel">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>270</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #cccccc;
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: black;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>cancel</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

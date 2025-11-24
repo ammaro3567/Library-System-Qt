@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReturnBookPage</class>
+ <widget class="QDialog" name="ReturnBookPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>426</width>
+    <height>352</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Return Book</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/new/login/.qtcreator/edit.svg</normaloff>:/new/login/.qtcreator/edit.svg</iconset>
+  </property>
+  <widget class="QPushButton" name="cancel">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>210</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #cccccc;
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: black;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>cancel</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="isbnInput">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>110</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 2px solid #357ABD;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+QLineEdit:focus {
+    border: 2px solid #1E90FF;
+    background: #f2f9ff;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ISBNTitle">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>110</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Script</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+font-size: 17px;
+    font-weight: bold;
+    color: #3498DB;
+    letter-spacing: 1px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>ISBN:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ReturnButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>210</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #1E90FF;
+    border-radius: 8px;
+    padding: 6px 15px;
+    color: white;
+    font-weight: bold;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Return</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
