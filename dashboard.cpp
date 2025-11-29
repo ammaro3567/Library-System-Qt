@@ -15,7 +15,7 @@ dashboard::dashboard(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // Optional: set table headers
+
     ui->BookTabel->setColumnCount(5);
     ui->BookTabel->setHorizontalHeaderLabels({"Title", "Author", "Genre", "ISBN", "Availability"});
 }
@@ -29,7 +29,7 @@ void dashboard::on_AddBook_clicked()
 {
     AddBookPage addPage;
     if(addPage.exec() == QDialog::Accepted) {
-        on_ViewAllBooks_clicked(); // refresh table after adding
+        on_ViewAllBooks_clicked();
     }
 }
 
@@ -37,7 +37,7 @@ void dashboard::on_SearchBook_clicked()
 {
     SearchBook searchPage;
     if(searchPage.exec() == QDialog::Accepted) {
-        on_ViewAllBooks_clicked(); // optional: refresh table with search results
+        on_ViewAllBooks_clicked();
     }
 }
 
@@ -45,7 +45,7 @@ void dashboard::on_DeleteBook_clicked()
 {
     DeleteBook deletePage;
     if(deletePage.exec() == QDialog::Accepted) {
-        on_ViewAllBooks_clicked(); // refresh table after deletion
+        on_ViewAllBooks_clicked();
     }
 }
 
@@ -70,7 +70,7 @@ void dashboard::on_ReturnBookButton_clicked()
 {
     ReturnBookPage returnPage;
     if(returnPage.exec() == QDialog::Accepted) {
-        on_ViewAllBooks_clicked(); // refresh table
+        on_ViewAllBooks_clicked();
     }
 }
 
@@ -78,7 +78,7 @@ void dashboard::on_BorrowBookButton_clicked()
 {
     BorrowBookPage borrowPage;
     if(borrowPage.exec() == QDialog::Accepted) {
-        on_ViewAllBooks_clicked(); // refresh table
+        on_ViewAllBooks_clicked();
     }
 }
 

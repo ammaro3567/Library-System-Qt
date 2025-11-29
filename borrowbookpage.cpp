@@ -28,7 +28,6 @@ void BorrowBookPage::on_BorrowButton_clicked()
 
     if (db->borrowBook(isbn)) {
         QMessageBox::information(this, "Success", "Book borrowed successfully!");
-        this->close();
     } else {
         QMessageBox::warning(this, "Failed", "Book not available or not found!");
     }

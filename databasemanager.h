@@ -13,7 +13,7 @@ public:
     explicit DatabaseManager(const QString& path);
     ~DatabaseManager();
 
-    // Book operations
+
     bool addBook(const QString &title, const QString &author,
                  const QString &genre, const QString &isbn, const QString &availability);
     bool deleteBook(int id);

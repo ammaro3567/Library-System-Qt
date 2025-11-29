@@ -1,6 +1,6 @@
 #include "databasemanager.h"
 
-DatabaseManager::DatabaseManager(const QString& path) {
+DatabaseManager::DatabaseManager(const QString& path) { //library.db
     m_db = QSqlDatabase::addDatabase("QSQLITE");
     m_db.setDatabaseName(path);
 
@@ -68,12 +68,12 @@ bool DatabaseManager::deleteBook(int id) {
     return true;
 }
 
-// ✅ Fixed searchBooks to avoid parameter count mismatch
-QSqlQuery DatabaseManager::searchBooksByColumn(const QString& column, const QString& keyword) {
+
+QSqlQuery DatabaseManager::searchBooksByColumn(const QString& column, const QString& keyword) { // title , harry
     QSqlQuery query;
-    QString sql = QString("SELECT * FROM books WHERE %1 LIKE ?").arg(column);
+    QString sql = QString("SELECT * FROM books WHERE %1 LIKE ?").arg(column); // SELECT * FROM books WHERE title LIKE  %harry%
     query.prepare(sql);
-    query.addBindValue("%" + keyword + "%");
+    query.addBindValue("%" + keyword + "%"); // %harry%
 
     if(!query.exec()) {
         qDebug() << "Search books failed:" << query.lastError().text();
@@ -128,7 +128,7 @@ bool DatabaseManager::checkUser(const QString& username, const QString& password
     }
     return query.next();
 }
-bool DatabaseManager::borrowBook(const QString& isbn) {
+bool DatabaseManager::borrowBook(const QString& isbn) { // 123
     QSqlQuery query;
 
     // Check availability

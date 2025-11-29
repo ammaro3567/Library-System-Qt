@@ -26,20 +26,15 @@ void ReturnBookPage::on_ReturnButton_clicked()
         return;
     }
 
-    DatabaseManager db("library.db");  // لو انت عامل Singleton استخدمه
-
-    // 1. Get book ID by ISBN
-    int id = db.getBookIdByISBN(isbn);
+    int id = db->getBookIdByISBN(isbn);
 
     if (id == -1) {
         QMessageBox::warning(this, "Error", "Book not found!");
         return;
     }
 
-    // 2. Return book
-    if (db.returnBook(id)) {
+    if (db->returnBook(id)) {
         QMessageBox::information(this, "Success", "Book returned successfully!");
-          // يقفل صفحة return
         this->close();
     } else {
         QMessageBox::warning(this, "Error", "Failed to return book!");

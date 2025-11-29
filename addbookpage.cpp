@@ -21,9 +21,9 @@ void AddBookPage::on_AddBook_clicked()
 {
     QString title = ui->TitleInput->text();
     QString author = ui->AuthorInput->text();
-    QString genre = ui->Generbox->currentText().trimmed();          // Corrected
+    QString genre = ui->Generbox->currentText().trimmed();
     QString isbn = ui->ISBNInput->text();
-    QString availability = ui->Avalibiltybox->currentText().trimmed(); // Corrected
+    QString availability = ui->Avalibiltybox->currentText().trimmed();
 
     if(title.isEmpty() || author.isEmpty() || isbn.isEmpty()) {
         QMessageBox::warning(this, "Error", "Please fill all required fields!");

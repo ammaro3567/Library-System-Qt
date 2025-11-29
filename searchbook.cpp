@@ -20,7 +20,7 @@ SearchBook::~SearchBook()
 void SearchBook::on_Searchbutton_clicked()
 {
     QString column;
-    QString value = ui->ValueInput->text().trimmed();
+    QString value = ui->ValueInput->text().trimmed(); // harry
 
     if(value.isEmpty()) {
         QMessageBox::warning(this, "Error", "Please enter a value to search!");
@@ -35,7 +35,7 @@ void SearchBook::on_Searchbutton_clicked()
 
     QSqlQuery result = db->searchBooksByColumn(column, value);
 
-    ui->ResultTable->setRowCount(0); // مسح النتائج القديمة
+    ui->ResultTable->setRowCount(0);
     int row = 0;
     while(result.next()) {
         ui->ResultTable->insertRow(row);

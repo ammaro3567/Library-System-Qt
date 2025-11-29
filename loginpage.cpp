@@ -18,7 +18,7 @@ LoginPage::~LoginPage()
     delete ui;
 }
 
-// Create Account button (no logic yet)
+
 void LoginPage::on_createAccountButton_clicked()
 {
     QString username = ui->usernameInput->text();
@@ -36,7 +36,7 @@ void LoginPage::on_createAccountButton_clicked()
     }
 }
 
-// Login button (no logic yet)
+
 void LoginPage::on_loginButton_clicked()
 {
     QString username = ui->usernameInput->text();
@@ -50,7 +50,7 @@ void LoginPage::on_loginButton_clicked()
     if(db->checkUser(username, password)) {
         dashboard *d = new dashboard();
         d->show();
-        this->close(); // close login page
+        this->close();
     } else {
         QMessageBox::warning(this, "Login Failed", "Invalid username or password.");
     }
