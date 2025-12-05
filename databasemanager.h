@@ -8,6 +8,7 @@
 #include <QString>
 #include <QVariant>
 
+
 class DatabaseManager {
 public:
     explicit DatabaseManager(const QString& path);
@@ -27,7 +28,7 @@ public:
     bool borrowBook(const QString& isbn);
     bool returnBook(int id);
     int getBookIdByISBN(const QString &isbn);
-
+    bool getISBN(const QString& isbn);
 
 private:
     QSqlDatabase m_db;

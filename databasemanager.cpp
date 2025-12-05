@@ -192,4 +192,15 @@ int DatabaseManager::getBookIdByISBN(const QString &isbn) {
 
     return -1;
 }
+bool DatabaseManager::getISBN(const QString &isbn){
+    QSqlQuery query;
+    query.prepare("SELECT isbn FROM books WHERE isbn = :isbn");
+    query.bindValue(":isbn", isbn);
+
+    if (!query.exec()) {
+        qDebug() << "ISBN search failed:" << query.lastError().text();
+        return false;
+    }
+    return true;
+}
 

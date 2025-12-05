@@ -25,11 +25,13 @@ void AddBookPage::on_AddBook_clicked()
     QString isbn = ui->ISBNInput->text();
     QString availability = ui->Avalibiltybox->currentText().trimmed();
 
+
     if(title.isEmpty() || author.isEmpty() || isbn.isEmpty()) {
         QMessageBox::warning(this, "Error", "Please fill all required fields!");
         return;
     }
-
+    if(db->getISBN(isbn)){QMessageBox::critical(this, "Error", "This Book is Found");}
+    else{
     if(db->addBook(title, author, genre, isbn, availability)) {
         QMessageBox::information(this, "Success", "Book added successfully!");
         ui->TitleInput->clear();
@@ -38,6 +40,7 @@ void AddBookPage::on_AddBook_clicked()
 
     } else {
         QMessageBox::critical(this, "Error", "Failed to add book!");
+    }
     }
 }
 
